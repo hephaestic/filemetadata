@@ -1,0 +1,9 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    p Submit a file to view its filesize
+    form(method="post", action="/getfilesize", enctype="multipart/form-data")
+      input(type="file", name="file")
+      input(type="submit", value="Submit")
